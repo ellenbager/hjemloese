@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjælp til hjemløse</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!---ICONER KOMMER FRA GOOGLE ICONS-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <nav class="navigation__container">
+                <a href="index.html"><img class="logo" src="img/logo1.png" alt="Lille Logo"></a>
+                <!-- Menu items -->
+                <div class="menuitems__container">
+                    <a href="index.html" class="menuitem">HJEM</a>
+                    <a href="voresarbejde.html" class="menuitem">VORES ARBEJDE</a>
+                    <a href="blivfrivillig.html" class="menuitem active_menuitem">BLIV FRIVILLIG</a>
+                    <a href="kontakt.html" class="menuitem">KONTAKT</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <img class="billede" src="img/frivillig.png" alt="">
+
+    <div class="forskel">
+        <h2 class="oswald">GØR EN FORSKEL</h2>
+        <p class="mangler">Vi mangler frivillige, og det er der
+            heldigvis mange gode grunde til at
+            blive.
+        </p>
+        <p class="mangler"> Vi udsteder også et frivillighedsbevis,
+            hvis du får brug for det til uddannelse
+            eller job.
+        </p>
+
+        <div class="section">
+            <a href="#"><button class="button1">TILMELD DIG SOM FRIVILLIG</button></a>
+        </div>
+    </div>
+
+    <h2 class="overskrift">Vi har mange områder, hvor vi mangler
+        din hjælp:
+    </h2>
+
+    <div class="row">
+        <div class="help">
+            <div class="section">
+                <span class="material-symbols-outlined icon">
+                    local_cafe
+                </span>
+            </div>
+
+
+            <p class="text">Vi er tilstede på Klostertorvet alle
+                eftermiddage alle hverdage i tidsrummet
+                15.00-17.00. Her deler vi ud af varme
+                drikke og hvad der ellers er behov for.
+            </p>
+        </div>
+
+        <div class="help">
+            <div class="section">
+                <span class="material-symbols-outlined icon">
+                    house
+                </span>
+            </div>
+
+            <p class="text">Vi kommer ud til bosteder og hjælper her
+                beboerne med mad, tøj, pasning af hus
+                og have.
+            </p>
+        </div>
+
+        <div class="help">
+            <div class="section">
+                <span class="material-symbols-outlined icon">
+                    park
+                </span>
+            </div>
+
+            <p class="text">
+                Vi ønsker at tilbyde udflugter for de udsatte
+                såsom cykelture og fisketure. Foreningen
+                råder over to både, og vi drømmer om et
+                team af sejlglade frivillige, der vil
+                arrangere disse sejlture.
+            </p>
+        </div>
+
+        <div class="help">
+            <div class="section">
+                <span class="material-symbols-outlined icon">
+                    handshake
+                </span>
+            </div>
+            <p class="text">
+                Vi kan tilbyde hjemmestøtte for de funktionelle
+                hjemløse. Her kan man vælge at blive mentor
+                eller besøgsven for den udsatte.
+            </p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2 class="form-title">Bliv frivillig nu</h2>
+        <p class="form-description">Udfyld nedenstående formular, så kontakter vi dig. Sammen finder vi ud af, hvilken
+            frivilligaktivitet, der passer til dig.</p>
+
+        <div class="form-group">
+            <div class="form-group-item">
+                <label for="name">Dit Navn*</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group-item">
+                <label for="age">Din Alder*</label>
+                <input type="number" id="age" required>
+            </div>
+
+            <div class="form-group-item">
+                <label for="phone">Dit telefonnummer*</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group-item">
+                <label for="email">Din e-mail*</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group-item">
+                <label for="address">Din adresse*</label>
+                <input type="text" id="address" required>
+            </div>
+
+            <div class="form-group-item">
+                <label for="postal-code">Dit postnr.*</label>
+                <input type="text" id="postal-code" required>
+            </div>
+
+            <div class="form-group-item">
+                <label for="city">Din by*</label>
+                <input type="text" id="city" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-group-item">
+                <label for="comment">Kommentar</label>
+                <textarea id="comment"></textarea>
+            </div>
+        </div>
+
+        <p class="form-note">*Ved at udfylde denne formular accepterer du, at Hjælp til Hjemløse må kontakte dig via
+            sms, telefon og e-mail.</p>
+
+        <button class="submit-button">Indsend</button>
+    </div>
+
+
+    <h2 class="overskrift">Støt en særlig sag</h2>
+
+    <p class="text donationer">
+        Donationer er yderst taknemmeligt. Pengene vil gå til at støtte
+        vores ressourcer, som vil gå ud til de udstatte
+    </p>
+
+    <div class="section">
+        <div class="mobile">
+            <img class="icon1" src="img/mobilepay.png" alt="MobilePay logo">
+            <p class="donation">
+                Mobilepay - 720223
+            </p>
+        </div>
+
+        <div class="mobile">
+            <img class="icon1" src="img/icons8-card-50.png" alt="Card icon">
+            <p class="donation">
+                Kontonummer - 9897 45619 01037
+            </p>
+        </div>
+
+        <div class="mobile">
+            <img class="icon1" src="img/icons8-shopping-bag-50.png" alt="Shopping bag icon">
+            <p class="donation">
+                Donation - Trindsøvej
+            </p>
+        </div>
+    </div>
+
+    <!--- kommer fra https://www.youtube.com/watch?v=nAjR0Oj0J8E - sponsor carousel -->
+
+    <h2 class="overskrift">Med støtte fra</h2>
+    <div class="logos">
+        <div class="logos-slide">
+            <img src="logos/oak.png" alt="OAK Foundation logo">
+            <img src="logos/pro-safe.png" alt="Pro-safe logo">
+            <img src="logos/plum.png" alt="Plum logo">
+            <img src="logos/afi.png" alt="AFI Marine logo">
+            <img src="logos/blaklader.png" alt="Blåkläder logo">
+            <img src="logos/carlras.png" alt="Carl-ras logo">
+            <img src="logos/easis.png" alt="Easis logo">
+            <img src="logos/effektlageret.png" alt="Effekt lageret logo">
+            <img src="logos/jorden.png" alt="Jorden logo">
+            <img src="logos/meny.png" alt="Meny kaffe logo">
+            <img src="logos/pulter.png" alt="Pulter kammer logo">
+            <img src="logos/salixin.png" alt="Salixin logo">
+            <img src="logos/supervision.png" alt="SuperVision logo">
+            <img src="logos/tandex.png" alt="Tandex logo">
+            <img src="logos/trygfonden.png" alt="Trygfonden logo">
+        </div>
+    </div>
+
+    <!--- footer -->
+
+    <footer>
+        <div class="footer">
+            <p class="footer-text">kontakt@hjælptilhjemløse.dk</p>
+            <p class="footer-text">+ 45 22 21 07 79 </p>
+            <br>
+            <p class="footer-text"> Hjælp til Hjemløse </p>
+            <p class="footer-text"> Mjølnersvej 6 </p>
+            <p class="footer-text"> 8230 Åbyhøj </p>
+            <p class="footer-text"> CVR: 35315306</p>
+            <img class="footer-logo" src="img/logo.png" alt="Stort logo">
+            <div class="icon-card">
+                <img class="social-icon" src="img/icons8-facebook.png" alt="Facebook icon">
+                <img class="social-icon" src="img/icons8-instagram.png" alt="Instagram icon">
+            </div>
+        </div>
+
+    </footer>
+
+    <!--- sticky navbar -->
+
+    <div class="navbar">
+        <a href="voresarbejde.html" class="navbar1">Vores arbejde</a>
+        <a href="kontakt.html" class="navbar1">Kontakt</a>
+        <a href="blivfrivillig.html" class="frivillig"> <i class="material-symbols-outlined hjerte">
+                favorite</i> <br> Bliv
+            frivillig</a>
+    </div>
+</body>
+
+</html>

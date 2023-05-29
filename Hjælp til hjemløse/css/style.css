@@ -1,0 +1,1230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #707070;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'1,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48
+}
+
+/* ---- header ---- */
+
+.navigation__container {
+    background-color: #DCDED7;
+    height: 50px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    width: 60px;
+    margin-top: 5%;
+    z-index: 4;
+}
+
+.menuitems__container {
+    display: none;
+}
+
+/* ---- index side ---- */
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 100;
+}
+
+.slider {
+    position: relative;
+    opacity: 0.75;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+.hide {
+    z-index: -10;
+}
+
+
+/* Icon */
+
+.phone-version {
+    display: none;
+}
+
+.centered-icon {
+    width: 105px;
+    height: 106px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    color: #475633;
+}
+
+/* buttons */
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.button {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    padding: 8px 16px;
+    background-color: #DCDED7;
+    border: none;
+    border-radius: 5px;
+    color: #475633;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.button span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #475633;
+    border-right: 2px solid #475633;
+    transform: rotate(45deg);
+}
+
+.button .button-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* ---- vores Arbejde ----  */
+
+.oswald {
+    color: #484848;
+    font-family: 'Oswald', sans-serif;
+}
+
+.forside {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.billede1 {
+    width: 100%;
+}
+
+.citat {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-shadow: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.facts {
+    transform: translateY(-50px);
+    width: 80%;
+    background-color: #E8E6E4;
+    margin-left: 10%;
+    padding: 5%;
+    margin-bottom: -50px;
+}
+
+.rene {
+    width: 100%;
+    background-color: #DCDED7;
+    transform: translateY(-5px);
+}
+
+.overskrift1 {
+    color: #484848;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.picture {
+    width: 80%;
+    margin-left: 10%;
+    z-index: 10;
+}
+
+.box {
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    transform: translateY(-110px);
+    z-index: -100;
+    background-color: #EAE9E8;
+    padding: 5px;
+    padding-bottom: 15px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.teamet1 {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.box1 {
+    position: relative;
+    width: 100%;
+    background-color: #EAE9E8;
+    transform: translateY(-70px);
+    z-index: -100;
+    padding: 5%;
+    padding-bottom: 15px;
+    padding-top: 80px;
+}
+
+.facts1 {
+    position: absolute;
+    text-align: right;
+    margin-top: 10px;
+    color: #475633;
+}
+
+.facts2 {
+    position: absolute;
+    text-align: right;
+    margin-left: 52%;
+    margin-top: 10px;
+    color: #475633;
+}
+
+.facts3 {
+    text-align: right;
+    margin-top: 10px;
+    color: #475633;
+}
+
+.droem {
+    background-color: #ECEDE9;
+}
+
+.tekst {
+    z-index: 10;
+    width: 70%;
+    margin-left: 15%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.heart {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.3;
+    transform: translateY(-50px);
+}
+
+.box2 {
+    width: 90%;
+    margin: 5%;
+    padding: 5%;
+    background-color: #ECEDE9;
+    text-align: center;
+}
+
+.vores {
+    padding: 20px 0;
+}
+
+.frivillige {
+    display: none;
+}
+
+/* ---- Bliv frivillig side ----  */
+
+.billede {
+    width: 100%;
+}
+
+.forskel {
+    position: relative;
+    width: 80%;
+    background-color: #DCDED7;
+    margin-left: 10%;
+    padding: 5%;
+    transform: translateY(-50px);
+}
+
+.mangler {
+    padding: 10px 0;
+}
+
+.button1 {
+    font-weight: bold;
+    background-color: #475633;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.overskrift {
+    color: #484848;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text {
+    margin: 10%;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.icon {
+    color: #475633;
+    height: 30px;
+}
+
+.text1 {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.text2 {
+    margin-bottom: 60px;
+}
+
+.section {
+    text-align: center;
+}
+
+
+/* Form */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #DCDED7;
+    padding: 20px;
+}
+
+.form-title {
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-description {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #475633;
+}
+
+.submit-button {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    padding: 8px 16px;
+    background-color: #475633;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-note {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* ---- kontakt side ----  */
+
+.kontakt-os {
+    margin-top: 20px;
+}
+
+.teamet {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.box3 {
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    transform: translateY(-110px);
+    z-index: -100;
+    background-color: #EAE9E8;
+    padding: 5px;
+    padding-bottom: 15px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.kontakt {
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.icon_card {
+    margin-left: 10%;
+}
+
+.icon1 {
+    width: 50px;
+}
+
+.donation {
+    text-align: center;
+}
+
+/* ---- Sponsor carousel ----  */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(225, 225, 225, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(225, 225, 225, 0), white);
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 20px;
+}
+
+/* ---- footer ---- */
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    background-color: #DCDED7;
+    margin-bottom: 80px;
+    text-align: left;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.footer-text {
+    margin-top: 8px;
+}
+
+.social-icon {
+    height: 40px;
+    padding-bottom: 8px;
+    color: #475633;
+}
+
+.icon-card {
+    margin-top: -35px;
+    transform: translateX(230px);
+}
+
+.footer_card:first-child {
+    margin-bottom: 16px;
+}
+
+.footer-logo {
+    width: 35%;
+    margin-top: 10px;
+}
+
+/* ---- sticky navbar ----  */
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    position: sticky;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.2%;
+}
+
+.navbar1 {
+    color: black;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-left: solid 0.5px black;
+}
+
+.frivillig {
+    background-color: #475633;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hjerte {
+    color: white;
+}
+
+/* ---- media queries til tablet og desktop ---- */
+
+@media screen and (min-width:600px) {
+
+
+    /* ---- header ---- */
+
+    .logo {
+        margin-top: 4%;
+        width: 40px;
+    }
+
+    .navigation__container {
+        position: relative;
+        top: 0;
+        padding-bottom: 5px;
+    }
+
+    .menuitem {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: #676767;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .active_menuitem {
+        background-color: #636d5d;
+    }
+
+    .menuitems__container {
+        display: none;
+    }
+
+    .navigation__container input:checked~.menuitems__container {
+        display: block;
+    }
+
+    .menuitems__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuitem:hover {
+        color: #475633;
+        background-color: #c5c9ba;
+        transform: translateY(0px);
+    }
+
+    .active_menuitem {
+        background-color: #c5c9ba;
+        color: #475633;
+    }
+
+    /* ---- Vores arbejde side ---- */
+
+    .container {
+        width: 70%;
+        margin-left: 15%;
+        height: 250px;
+        resize: vertical;
+        overflow: auto;
+    }
+
+    .facts {
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 29px;
+    }
+
+    .billede1 {
+        width: 40%;
+        float: left;
+    }
+
+    .rene {
+        width: 60%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .overskrift {
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .respons {
+        float: left;
+        width: 33.3%;
+        margin-top: 40px;
+    }
+
+    .box {
+        transform: translateY(-60px);
+        z-index: -100;
+        padding-top: 70px;
+        min-height: 370px;
+    }
+
+    .picture {
+        width: 30%;
+        margin-left: 30px;
+        float: left;
+    }
+
+    .box1 {
+        padding-left: 35%;
+    }
+
+    .facts1 {
+        margin-top: 30px;
+    }
+
+    .facts2 {
+        margin-left: 34%;
+        margin-top: 30px;
+    }
+
+    .facts3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .responsive {
+        width: 58%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    .heart {
+        width: 48%;
+        margin-left: 5%;
+        margin-top: 15px;
+    }
+
+    .frivillige {
+        display: block;
+        width: 37%;
+        float: left;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .droem {
+        min-height: 290px;
+    }
+
+    .box2 {
+        float: left;
+        width: 30%;
+        margin: 1.66%;
+        padding: 10px;
+        height: 420px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* ---- bliv frivillig side ---- */
+
+    .billede {
+        width: 60%;
+        margin-left: 20%
+    }
+
+    .forskel {
+        width: 50%;
+        margin-left: 25%;
+        padding: 20px;
+        transform: translateX(50px);
+    }
+
+    .help {
+        text-align: center;
+        float: left;
+        width: 35%;
+        margin: 7.5%;
+        height: 300px;
+    }
+
+    .donationer {
+        text-align: center;
+    }
+
+    .mobile {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 30px;
+    }
+
+    /* ---- kontakt side ---- */
+
+    .kontakt-os {
+        margin: 20px 0;
+    }
+
+    .os {
+        float: left;
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    .kontakt {
+        width: 100%;
+    }
+
+    .box3 {
+        padding: 5px;
+        transform: translateY(-140px);
+        padding-top: 130px;
+        height: 360px;
+        width: 100%;
+        margin: 1.66%;
+    }
+
+    .teamet {
+        width: 80%;
+        margin: 11.66%;
+    }
+
+    .column {
+        float: left;
+        width: 30%;
+        margin: 1.66%;
+    }
+
+    .kontakt {
+        max-width: 80%;
+    }
+
+    /* ---- Sponsor carousel ----  */
+    .logos:hover .logos-slide {
+        animation-play-state: paused;
+    }
+
+    /* ---- footer ---- */
+
+    .footer {
+        padding: 20px;
+    }
+
+    .social-icon {
+        height: 40px;
+    }
+
+    .icon-card {
+        margin-top: -60px;
+        float: right;
+        margin-right: 18%;
+    }
+
+    .footer-logo {
+        width: 140px;
+        float: right;
+        margin-right: 10%;
+        transform: translateY(-180px);
+    }
+
+    /* ---- nav bar ---- */
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    /* ---- header ---- */
+
+    .logo {
+        margin-top: 2%;
+        width: 50px;
+    }
+
+
+    /* ---- Vores arbejde side ---- */
+
+    .rene {
+        min-height: 300px;
+    }
+
+    .text {
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .overskrift {
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .box {
+        min-height: 310px;
+    }
+
+    .box1 {
+        min-height: 400px;
+    }
+
+    .facts2 {
+        margin-left: 32%;
+    }
+
+    .responsive {
+        width: 52%;
+    }
+
+    .heart {
+        width: 40%;
+        margin-left: 6%;
+    }
+
+    .frivillige {
+        width: 42%;
+        margin-bottom: 60px;
+    }
+
+    .droem {
+        min-height: 290px;
+    }
+
+    .box2 {
+        height: 350px;
+    }
+
+    /* ---- bliv frivillig side ---- */
+
+    .help {
+        height: 150px;
+    }
+
+    /* ---- kontakt side ---- */
+
+    .kontakt-os {
+        margin: 30px 0;
+    }
+
+    .os {
+        margin-left: 50px;
+    }
+
+    /* ---- footer ---- */
+
+    .icon-card {
+        margin-right: 5%;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    /* ---- header ---- */
+
+    .logo {
+        margin-top: 2%;
+        width: 60px;
+    }
+
+    /* ---- Vores arbejde side ---- */
+
+    .billede1 {
+        width: 30%;
+    }
+
+    .rene {
+        width: 70%;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .picture {
+        width: 25%;
+        margin-left: 40px;
+    }
+
+    .box1 {
+        min-height: 450px;
+    }
+
+    .heart {
+        width: 35%;
+        margin-left: 7.5%;
+    }
+
+    .responsive {
+        width: 50%;
+        float: left;
+        margin: 0 5%;
+    }
+
+    .frivillige {
+        display: block;
+        width: 35%;
+        float: left;
+        margin-bottom: 60px;
+        margin-right: 5%;
+    }
+
+    .droem {
+        min-height: 350px;
+    }
+
+    .tekst {
+        padding: 50px 80px;
+    }
+
+    /* ---- bliv frivillig side ---- */
+
+    .billede {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .forskel {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .help {
+        margin-bottom: 30px;
+    }
+
+
+
+    /* ---- kontakt side ---- */
+
+    .os {
+        margin-left: 120px;
+    }
+
+    .box3 {
+        padding: 5px;
+        transform: translateY(-150px);
+        padding-top: 120px;
+        height: 280px;
+        width: 100%;
+        margin: 1.66%;
+    }
+
+}
+
+/* Form */
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 18px;
+        font-family: "Quicksand", sans-serif;
+        border-radius: 5px;
+        border: 1px solid #475633;
+        margin-bottom: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .form-title,
+    .form-description {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .form-group input,
+    .form-group textarea {
+        width: 90%;
+    }
+
+    .submit-button {
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .form-container,
+    .form-title,
+    .form-description,
+    .form-note {
+        text-align: left;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 601px) {
+    .form-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 50px;
+        margin-bottom: 15px;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .form-group.dit-navn {
+        grid-column: 1 / span 2;
+    }
+
+    .form-group.din-navn,
+    .form-group.din-alder,
+    .form-group.din-e-mail,
+    .form-group.dit-telefonnummer,
+    .form-group.din-adresse,
+    .form-group.dit-postnr,
+    .form-group.din-by {
+        margin-bottom: 15px;
+    }
+
+    .form-group-item {
+        margin-bottom: 10px;
+    }
+
+    .form-group-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    /* Override grid properties for the "Kommentar" box */
+    .form-group.kommentar {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .form-container,
+    .form-title,
+    .form-description,
+    .form-note {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sliders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .slider {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .slider-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .slider-image.active {
+        opacity: 1;
+    }
+
+    .phone-version {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+    }
+
+    .title {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .slider {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .phone-version {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+    }
+
+    .title {
+        display: block;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 300px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+
+}
